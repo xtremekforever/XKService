@@ -1,0 +1,8 @@
+# This is an example configuration file for the xtremek-alarm service.
+# It is either in ~/.xtremekservices/alarmservice.cf or /etc/xtremek-services/alarmservice.cf
+
+# The connection string to connect to the database. This is for the libpgxx PostgreSQL driver
+ConnectionString    "hostaddr=localhost port=5432 user=db_service password=service dbname=xtremek"
+
+# The location of the log file
+LogFile             /var/log/xtremekservices/alarmservice.log

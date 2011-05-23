@@ -1,0 +1,31 @@
+#!/bin/sh
+
+PATH="/usr/bin/"
+SERVICE="xtremek-service"
+SERVICE_PATH="$PATH/$SERVICE"
+
+test -x "$SERVICE_PATH" || exit 0
+set -e
+
+case "$1" in
+  start)
+      echo "Starting $SERVICE"
+      "$SERVICE_PATH"
+      ;;
+  stop)
+      echo "Stopping $SERVICE"
+      killall "$SERVICE"
+      ;;
+  restart|force-reload)
+      echo "Restarting $SERVICE"
+      $0 stop
+      $0 start
+      ;;
+  *)
+      echo "Usage: $0 {start|stop|restart|force-reload}" >&2
+      exit 1
+      ;;
+
+esac
+
+exit 0

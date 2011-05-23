@@ -1,0 +1,29 @@
+XKService Changelog
+===================
+
+Notes
+-----
+
+This is the changelog for the XKService daemon for the XtremeK database.
+This changelog includes changes made to the XKService daemon with version
+and date informaton including a description.
+
+
+Changes
+-------
+
+Date        Version  Change Description
+----------  -------  ---------------------------------------------------------------------
+2010-09-13   v0.0.1  Apparently Boost::Timer uses the process run time, so now the time()
+                     function is being used for timing.
+2010-09-13   v0.0.1  Started using Boost::Timer to provide timer capabilities to search
+                     for and clear invalid records from the database.
+2010-09-13   v0.0.1  Created a new function for the smsd database to simplify the service
+                     code.
+2010-09-13   v0.0.1  Created a TODO file to add new todos for the project.
+2010-09-13   v0.0.1  Updated the database.cpp file to include better support for handling
+                     database errors.
+2010-09-13   v0.0.1  Created new queries to drastically increase the speed of scanning
+                     for new alerts.
+2010-09-13   v0.0.1  Created this changelog.
+

@@ -1,0 +1,17 @@
+XKService Todo List
+===================
+
+High Priority Tasks
+-------------------
+ - Use the table tblGPRS table to determine if there are new
+   alerts from the start instead of scanning devices.
+
+Medium Priority Tasks
+---------------------
+ - Implement advanced logging settings (debug, custom log file,
+   or syslog) in the configuration.
+ - Create configuration files for the service configuration.
+   Include settings for alert checking, cleanups, and database
+   configurations.
+ - Implement an SMTP client using Boost possibly instead of
+   using the mail command.
