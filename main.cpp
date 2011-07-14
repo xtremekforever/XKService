@@ -32,7 +32,7 @@ int main(int argc, char *argv[])
         for (int i = 0; i < argc; i++) {
             string cmd = argv[i];
             if (cmd == "-h" || cmd == "--help") {
-                cout << "Usage: " << APPLICATION_NAME << " [OPTION]" << endl;
+                cout << "Usage: " << EXECUTABLE_NAME << " [OPTION]" << endl;
                 cout << "Command Line Options: " << endl;
                 cout << " -h, --help\tshow this help" << endl;
                 cout << " -d, --debug\trun in debug mode (don't run as a service)" << endl;
